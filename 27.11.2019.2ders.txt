@@ -1,0 +1,55 @@
+JAVA IDE LERÝ
+
+-ECLÝPSE ÝDE
+--PHP
+--JAVA
+
+-Netbeans IDE
+
+-Intellij Ýdea
+-- Python > Pyharm IDE
+--Android > Android Studio 
+
+
+KOD EDÝTORLERÝ
+
+-Notepad++ 
+-Dreamviewer
+-Visual Studio Code
+
+IDE Nedir?
+
+-Belirli bir yazýlým dilinde program yazabilmek için gerekli bir programdýr. Bu program sayesinde yazýlým dili bileþenleri IDEye entegreli þekilde kullanýlabilir.
+
+-Java için özellikle JAVA JDK yüklü olmasý gerekir. IDE Java JDKdaki JVM ve JRE gibi kavramlar ile haberleþebilir.
+
+------
+
+Java Syntax (Yazým Dili Kurallarý)
+
+- Bir sýnýf ismi sayýyla baþlayamaz. 
+- Bir sýnýf ismi türkçe karakter içermemelidir.(öçðüþ)
+- Özel karakter içeremez. (!'^++%&)
+- Sýnýf ismi boþluk içermemelidir.
+- Büyük harf küçük har farký var.
+- Bir class içerisinde bir deðiþken bir defa üretilebilir. örn;int sayi1 ürettiysem bidaha aynýsýný üretemem.
+
+- Java programlama 1 (yanlýþ) > JavaProgramlama1
+- Java-Programlama-1 (yanlýþ) > JavaProgramlama1
+- javaprogramlama1 > Javaprogramlama1
+
+Javada bir kural:
+
+-Sýnýf isminin ilk karakteri özellikle büyük harf ile baþlamak zorundadýr.
+
+Sýnýf nedir?
+
+- Java kodlarýný yazabileceðimiz sayfalardýr.
+
+DEÐÝÞKEN VE METOT ÝSÝMLERÝKURALLARI:
+
+- DEÐÝÞKEN VE METOT ÝSÝMLERÝNÝN ÝLK HARFLERÝ ÖZELLLÝKLE KÜÇÜK HARF ÝLE BASLAR
+SAYI ÝLE BASLAYAMAZ
+BOSLUK OLAMAZ
+ÖZEL KARAKTER OLAMAZ
+TÜRKÇE KARAKTER OLAMAZ
