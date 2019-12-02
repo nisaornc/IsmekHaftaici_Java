@@ -1,0 +1,134 @@
+//JAVA PROGRAMLAMA DERS TARÝHÝ:02.12.2019
+
+import java.util.Scanner;
+
+
+public class Ornek2 {
+
+	public static void main(String[] args) {
+	/*  2.ÖRNEK
+		Scanner sc = new Scanner(System.in);  // bu galiba dýþarýdan bir þey almak için kullanýllýr. class buyuk harfle baslar degýsken metot kucuk harfler ornek sc 
+		//sc yazý oldugunu belýrtýyo sayý gelmesýn
+		System.out.println("Lütfen adýnýzý giriniz");
+		String ad = sc.next();
+		
+		System.out.println("Lütfen soyadýnýzý giriniz");
+		String soyad = sc.next();
+		
+		
+		System.out.println(ad+" "+soyad); 
+		
+		// next dýþarýdan string deðer almak için kullanýlýr.
+		*/ 
+		/*	// 3.ÖRNEK 02.12.2019
+		  Scanner sc = new Scanner (System.in);
+		System.out.println("Lütfen adýnýzý giriniz"); //EKRANA YAZI YAZDIRDIK
+		String ad = sc.nextLine(); //KALVYEDEN VERÝ GÝRÝÞÝ ÝSTEDÝK VE DEÐÝÞKENE DEÐERÝ ATADIK --nextline=iki isim arasýnda bosluk koymayý saglar
+		System.out.println("Lütfen soyadýnýzý giriniz");
+		String soyad = sc.next();
+		
+		System.out.println("Lütfen yaþýnýzý giriniz");
+		int yas = sc.nextInt(); //sayý ýcýn ýnt sc=klavyeden verý giriþi ýcýn
+		
+		System.out.println("adýnýz: " +ad); //DEÐÝÞKENE ATADIGIMIZ DEGERI EKRANA YAZDIRDIK
+		System.out.println("soyadýnýz: "+soyad);
+		System.out.println("yaþýnýz: "+yas);
+		*/
+		
+		// DISARIDAN ÝKÝ SAYI GÝRÝCEZ EKRANA YAZDIRICAZ 4.ÖRNEK 02.12.2019
+		Scanner sc = new Scanner(System.in); //her kodlama basýnda bulunucak
+		System.out.println("1.sayýyý giriniz: ");
+		int sayi1 = sc.nextInt();
+				System.out.println("2.sayýyý giriniz: ");
+		int sayi2 = sc.nextInt();
+		System.out.println("1.sayý: " +sayi1);
+		System.out.println("2.sayý: " +sayi2);
+
+	}
+
+}
+
+
+-------------------------------------------------------------------------------------
+public class ÖRNEK5 {
+	public static void main(String[] args) {
+		//DIÞARDAN 2 ÝNT DEÐERÝ GÝR, EKRANA YAZDIR
+		
+		Scanner sc = new Scanner(System.in);//kullanýcýdan veri alma
+		
+		System.out.println("Lütfen 1.sayýyý Giriniz" );// syso yazýp kontrol ve bosluk tusuna basýnca dýrek yazýyor bu cumleyý
+		
+		int sayi1 = sc.nextInt(); //bunu kullanabýlmmek ýcýn yukarýdaký Scanner sc = new Scanner(System.in); ý yazmak zorundayýz.
+		
+		System.out.println("Lütfen 2.sayýyý Giriniz" );// = ile bir deðiþkene deðer atamasý yapabiliriz
+		int sayi2 = sc.nextInt();//klavyeden sayi giriþi beklemek için
+		
+		//ekranda yazý göstermek için
+		System.out.println("1.sayý: " +sayi1);
+		System.out.println("2.sayý: " +sayi2);
+		
+		
+		
+		
+		
+	}
+}
+-----------------------------------
+
+
+
+
+
+
+public class örnek6 {
+
+	public static void main(String[] args) {
+		
+		/* 
+		 ARÝTMETÝK OPERATÖRLER
+		 + - TOPLAMA
+		 - - ÇIKARMA
+		 * - ÇARPMA
+		 / - BÖLME
+		 % - MOD ALMA
+		 ++ - DEÐERÝ BÝR ARTTIR
+		 -- - DEÐERÝ BÝR AZALT
+		 
+		 MANTIKSAL OPERATÖRLER
+	    || - YA DA
+	    && - VE
+		 | - DEÐÝL
+		 
+		 ATAMA VE EÞÝTLÝK OPERATÖRLERÝ
+		  
+		  = - ATAMA YAPMAK ÝÇÝN
+		  == - DEÐERLERÝN EÞÝTLÝÐÝNÝ KONTRO EDEÝLMEK ÝÇÝN KULLANILIR
+		  >= - BÜYÜK YADA EÞÝT
+		  <= - KÜÇÜK YADA EÞÝT
+		  += - BÝR DEÐÝÞKENÝN SON DEÐERÝNE SAYI EKLEMEK ÝÇÝN
+		  -= - BÝR DEÐÝÞKENÝN SON DEÐERÝNDEN SAYI ÇIKARMAK ÝÇÝN
+		  != - EÞÝT DEÐÝLDÝR
+		  > BÜYÜKTÜR
+                  < küçüktür
+		  /= - BÝR DEÐÝÞKEN DEÐERÝNÝ BÖLEBÝLMEK ÝÇÝN
+		  *= - BÝR DEÐÝÞKEN DEÐERÝNÝ FARKLI BÝR SAYI ÝLE ÇARPMAK ÝÇÝN
+		  
+		 
+		 
+		 
+		 
+		 */
+		
+		
+	}
+}
+
+---------------------------------------------
+
+
+
+
+
+
+
+
