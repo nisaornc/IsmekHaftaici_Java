@@ -1,0 +1,232 @@
+import java.util.Scanner; //Scanner yazýp kontrol bosluga basýnca import cýkýyor
+
+public class örnek8 {
+
+	public static void main(String[] args) {
+		
+	/*	//ÖRNEK4 benim yaptýgým
+				//dýsarýdan ýký sayý al, dýsarýdan aldýýn sayýlarý topla cýkar bol çarp sonuclarý ekrana yazdýr
+		Scanner sc = new Scanner(System.in); 
+		
+System.out.println("Lütfen 1.sayýyý Giriniz" );
+		
+		int sayi1 = sc.nextInt();
+		
+		System.out.println("Lütfen 2.sayýyý Giriniz" );
+		int sayi2 = sc.nextInt();
+		
+		
+		System.out.println("1.sayý: " +sayi1);
+		System.out.println("2.sayý: " +sayi2);
+		
+		
+		int toplam = sayi1+sayi2;
+		System.out.println("Toplam:"+toplam);
+		
+		
+System.out.println("Lütfen 1.sayýyý Giriniz" );
+		
+		int sayi3 = sc.nextInt();
+		
+		System.out.println("Lütfen 2.sayýyý Giriniz" );
+		int sayi4 = sc.nextInt();
+		
+		
+		System.out.println("1.sayý: " +sayi3);
+		System.out.println("2.sayý: " +sayi4);
+		
+		
+		int sonuc = sayi3-sayi4;
+		System.out.println("sonuc:"+sonuc);
+		
+System.out.println("Lütfen 1.sayýyý Giriniz" );
+		
+		int sayi5 = sc.nextInt();
+		
+		System.out.println("Lütfen 2.sayýyý Giriniz" );
+		int sayi6 = sc.nextInt();
+		
+		
+		System.out.println("1.sayý: " +sayi5);
+		System.out.println("2.sayý: " +sayi6);
+		
+		
+		int carpim = sayi5*sayi6;
+		System.out.println("carpim:"+carpim);
+		
+		
+System.out.println("Lütfen 1.sayýyý Giriniz" );
+		
+		int sayi7 = sc.nextInt();
+		
+		System.out.println("Lütfen 2.sayýyý Giriniz" );
+		int sayi8 = sc.nextInt();
+		
+		
+		System.out.println("1.sayý: " +sayi7);
+		System.out.println("2.sayý: " +sayi8);
+		
+		
+		int bölüm = sayi7/sayi8;
+		System.out.println("sonuc:"+bölüm);
+		 
+		
+
+	
+		
+ //hocanýn yaptýgý
+// --------------------------------------------------------------------------------------------------------------------------- 
+	//	import java.util.Scanner; //Scanner yazýp kontrol bosluga basýnca import cýkýyor
+
+	//	public class örnek8 {
+
+		//	public static void main(String[] args) {
+				System.out.println("Lütfen 1.sayýyý Giriniz" ); //+öncesi parantez koymalýsýnký ýslemýy yapsýn
+				
+				int sayi18 = sc.nextInt();
+				
+System.out.println("Lütfen 2.sayýyý Giriniz" ); 
+				
+				int sayi28 = sc.nextInt();
+		
+	int toplamaSonucu = sayi18+sayi28;
+	int cikarmaSonucu = sayi18-sayi28;
+	int bolmeSonucu = sayi18/sayi28;			
+	int carpmaSonucu = sayi18*sayi28;
+	int modSonucu = sayi18%sayi28;//bölümden kalaný verir
+	System.out.println("Toplama Ýþlemi Sonucu: "+toplamaSonucu ); 
+	System.out.println("Çýkarma Ýþlemi Sonucu: "+cikarmaSonucu ); 
+	System.out.println("Bölme Ýþlemi Sonucu: "+bolmeSonucu ); 
+	System.out.println("Çarpma Ýþlemi Sonucu: "+carpmaSonucu ); 
+	System.out.println("Mod Ýþlemi Sonucu: "+modSonucu ); 
+	
+	//------------------------------------------------------------------------------------------
+	
+	System.out.println("-----");
+	
+	
+	int s = 10;
+	System.out.println(s++); // önce yazdýr, sonra arttýr
+	System.out.println(s--);	 // önce yazdýr, sonra azalt
+	System.out.println(++s);	 // önce arttýr, sonra yazdýr
+	System.out.println(--s);	 // önce azalt, sonra yazdýr
+		
+		
+	System.out.println("----------");	
+	
+	
+	int topla = s += 1;//s deðiþken deðerine 1 ilave et, ( s=s+1;) ikisi ayný sey (s += 1;) 
+	int cikar = s -= 1; // s deðiþken deðerinden 1 azalt
+	int carp = s *= 5; //s deðiþken deðerini 5 ile çarp
+	int bol = s /= 2; //s deðiþken deðerini 2 ile böl
+	
+	
+	System.out.println(topla);
+	System.out.println(cikar);
+	System.out.println(carp);
+	System.out.println(bol);
+	
+	
+	//-------------------------------------------------
+	*/
+	//ÖRNEK9
+	
+	
+public class ÖRNEK9 {
+	public static void main(String[] args) { 
+		
+		/*
+		 = ATAMA OPERATÖRÜ
+		 == EÞÝTLÝK KONTROLÜ
+		 === DENKLÝK KONTROLÜ (JAVADA YOK)
+		 */
+		
+		boolean b = false;
+		if(b==false) {
+			System.out.println("b'nin deðeri false'dur.");
+	}else {
+		System.out.println("b'nin deðeri true'dur.");
+	}
+		if(!b) {
+			System.out.println("b'nin deðeri true'dur");
+		}
+		
+		int sayi1 = 5;
+		int sayi2 = 9;
+		
+		//!= deðil ise
+		
+		if(sayi1!=sayi2) {
+			System.out.println("Sayi1'in deðeri,Sayi2'nin deðerine eþit deðildir.");
+		}
+		if(sayi1==sayi2) {
+		    System.out.println("Sayi1'in deðeri,Sayi2'nin deðerine eþittir.");	
+		}
+			
+		if(sayi1>sayi2) {
+			System.out.println("Sayi1,sayý2den büyüktür.");
+		
+		}
+		if(sayi1<sayi2) {
+			System.out.println("Sayi1, sayý2den küçüktür.");
+		}
+		
+		if(sayi1>=sayi2) {
+			System.out.println("Sayi1 sayý2ye eþit yada büyüktür.");
+		}
+		
+		if(sayi1<=sayi2) {
+			System.out.println("Sayi1 sayý2den küçük yada eþittir.");
+		}
+		
+		if(sayi1==5 && sayi2==9) {
+			//her iki þartýnda saðlanmasý durumu
+		}
+		
+		if(sayi1==5 || sayi1 == 1) {
+		//þartlardan herhangi birinin saðlanmasý durumu 	
+		}
+		
+		
+		
+		}
+	}
+
+
+	
+	
+	
+	}
+}
+
+
+
+
+//--------------------------------------------------------------
+public class ÖRNEK10 {
+	public static void main(String[] args) {
+		
+		//GEÇÝCÝ DEÐÝÞKEN KULLANIMI
+		
+		int A = 100;
+		int B = 500;
+		int gecici = A;
+		
+		
+		System.out.println("A'nýn deðeri > "+A);
+		System.out.println("B'nin deðeri > "+B);
+	
+		System.out.println("----");
+		gecici = A;
+		A = B;
+		B = gecici;
+		
+		System.out.println("A'nýn deðeri > "+A);
+		System.out.println("B'nin deðeri > "+B);
+		
+		
+		
+		
+	}
+}
+tür dönüþümleri ve karar yapýlarý
