@@ -1,0 +1,174 @@
+
+public class ÖRNEK11 {
+	public static void main(String[] args) {
+
+		/*
+		 KARAR YAPILARI
+
+		 - IF STATEMENT
+		 - SWITCH-CASE YAPISI
+
+
+		 */
+
+		// IF KULLANIMLARI
+		/*
+		 if
+		 if-else
+		 if-else if-else
+		 */
+
+		int sayi = 1;
+		if(sayi==1) {
+			System.out.println("Sayý deðiþken deðeri 1'dir.");
+		}
+
+		int sayi2 = 5;
+		if(sayi2==7) {
+			System.out.println("Sayý deðiþken deðeri 7'dir.");
+		}
+		else if(sayi2 == 5) {
+			System.out.println("Sayý2'nin deðiþken deðeri 5'dir.");
+		}
+// control a control iye basýnca kodlarý düzenlyo
+		//if yazýp kontrol ve bosluk a basýnca otomatýk yazýyor kod satýrýný 
+		
+		else {
+			System.out.println("Sayý2 ne 7 ne de 5 deðildir.");
+		}
+
+
+	}
+
+
+}
+//-------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+
+public class örnek2a {
+	public static void main(String[] args) {
+		
+		
+		//basit veri tipleri == ile kýyaslanýr. String deðerleri kýyaslanmasý için string sýýfýnýn equals metodu kullanýlmasý gerekýr.
+		//KULLANICI GÝRÝÞLÝ ÝÞLEM
+		
+		String defaultUsername = "root";
+		String defaultPassword = "abcd";
+		
+		// scanner nesnesi ile dýþarýdan veri giriþi saðlayalým.
+		Scanner sc = new Scanner(System.in); //KONTROL BOSLUGA BAS KENDINI IMPORT EDER (ALTI CIZGILI HATA VERINCE)
+		
+		
+		System.out.println("Kullanýcý adýný giriniz: ");
+		String username = sc.next();
+		System.out.println("Þifre giriniz: ");
+		String password = sc.next();
+		
+		
+	//	if(username==defaultUsername && password==defaultPassword) -----stringleri == yapamayýz o yüzden alttakýný yazcaz bu satýr yanlýs
+		if(username.equals(defaultUsername) && password.equals(defaultPassword))
+		{
+			System.out.println("Hoþgeldiniz");
+			//Dýþarýdan girdiðimiz kullanýcý adý root yada þifresi abcd ise
+		}else {
+			System.out.println("Hatalý giriþ"); 
+			//Dýþarýdan girdiðimiz kullanýcý adý root yada þifresi abcd deðil ise
+		}
+		
+		
+		
+		
+		
+	}
+}
+//------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class örnek3a {
+	public static void main(String[] args) {
+		/*
+		 Dýþarýdan kiþinin adýný ve yaþýný isteyiniz.
+	
+		Kiþinin yaþý 13ten küçük ise yaþýnýz 13ten küçük yazsýn
+		Kiþinin yaþý 20 ise yaþýnýz 20dir yazsýn
+		Kiþinin yaþý 25ten küçük ve 20den büyük ise 20-25 yaþ aralýðýndasýnýz yazsýn
+		Kiþinin yaþý 26ya eþit ve 26dan büyük ise yaþýnýz 25tenbüyüktür yazsýn. Bunu if else ile yazýnýz.
+		Hiç biri deðilse yaþýnýz belirtilen aralýkta deðildir yazýn.
+		*/
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Adýnýzý giriniz: ");
+		String ad = sc.next();
+		System.out.println("Yaþýnýzý giriniz: ");
+		int yas = sc.nextInt();
+		
+	
+		if(yas<13) {
+			System.out.println("Yaþýnýz 13'ten küçüktür.");
+		}else if(yas==20) {
+			System.out.println("Yaþýnýz 20'dir.");
+		}else if(yas>20 && yas<=25) {
+			System.out.println("20-25 yaþ aralýðýndasýnýz.");
+		}else if(yas>=26) {
+			System.out.println("Yaþýnýz 25'den büyüktür.");
+		}else {
+			System.out.println("Yaþýnýz belirtilen aralýkta deðildir.");
+		}
+		
+		
+		
+	}
+}
+//-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+import java.util.Scanner;
+
+public class örnek4a {
+	public static void main(String[] args) {
+
+
+		/*Dýþarýdan iki sayý ve iþlem iste, iþlem deðeri (topla,çýkar,çarp,böl olabilsin )
+		 *  buna göre de iþlemi gerçekleþtirip, iþlem sonucunu ekrana yazdýrsýn.
+		 */
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Lütfen iþlem giriniz(topla,çýkar,çarp,böl) ");
+		String islem = sc.next();
+		System.out.println("Lütfen 1.sayýyý Giriniz" );
+
+		int sayi1 = sc.nextInt();
+
+		System.out.println("Lütfen 2.sayýyý Giriniz" );
+		int sayi2 = sc.nextInt();
+
+		int sonuc = 0;
+		if("topla".equals(islem)) {
+			sonuc= sayi1+sayi2;
+			System.out.println("Toplama iþlemi sonucu: "+sonuc);
+		}else if("çýkar".equals(islem)) {
+			sonuc= sayi1-sayi2;
+			System.out.println("Çýkarma iþlemi sonucu: "+sonuc);
+		}else if("çarp".equals(islem)) {
+			sonuc= sayi1*sayi2;
+			System.out.println("Çarpma iþlemi sonucu: "+sonuc);
+		}else if("böl".equals(islem)) {
+			sonuc= sayi1/sayi2;
+			System.out.println("Bölme iþlemi sonucu: "+sonuc);
+		}else {
+			System.out.println("Hatalý iþlem seçtiniz ! ");
+		}
+
+
+
+
+	}
+}
+//---------------------------------------------------------------------------------------------------------------
+
+
+
+
+
