@@ -1,0 +1,162 @@
+import java.util.Scanner;
+
+public class örnek5a {
+
+	public static void main(String[] args) {
+
+		// ÝÇ ÝÇE ÝF KULLANIMI
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Adýnýzý giriniz");
+		String ad = sc.next();
+		System.out.println("Soyadýnýzý giriniz");
+		String soyad =sc.next();
+
+		if("ÞERÝF".equals(ad) && "GÜNGÖR".equals(soyad) ) {
+System.out.println("Lütfen yaþýnýzý giriniz");
+			int yas =sc.nextInt();
+			if(yas==25) {
+				System.out.println("Yaþýnýz 25'dir.");
+				}
+				else {
+					System.out.println("Yaþýnýz 25 deðildir.");
+
+				}
+			
+			}else {
+				System.out.println("HATALI BÝLGÝ GÝRÝÞÝ");
+			}
+		}
+	}
+
+//------------------------------------------------------------------------------------------------
+
+
+import java.util.Scanner;
+
+public class örnek6a {
+
+	public static void main(String[] args) {
+		//Dýþarýdan mevsimin ismini isteyin, mevsime ait aylarý ekrana yazdýrýn.
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Lütfen mevsim giriniz");
+		String mevsim = sc.next();
+		
+		if("sonbahar".equalsIgnoreCase(mevsim))//büyük küçük harf farkýný ortadan kaldýrmak ýcýn kullanýlýr(equalsIgnoreCase)
+			//ifin içinde sadece bir satýr varsa süslü paranteze gerek yoktur.çoklu satýrlar ýcýn gerek var.
+System.out.println("Ekim, Kasým, Aralýk");
+		else if("kýþ".equalsIgnoreCase(mevsim))
+			System.out.println("Ocak, Þubat, Mart");
+		else if("ilkbahar".equalsIgnoreCase(mevsim))
+			System.out.println("Nisan, Mayýs, Haziran");
+		else if("yaz".equalsIgnoreCase(mevsim))
+			System.out.println("Temmuz, Aðustos, Eylül");
+		else
+			System.out.println("Hatalý Mevsim Giriþi");
+		
+		
+
+	}
+
+}
+//---------------------------------------------------------------------------
+
+
+
+
+
+
+public class örnek9a {
+
+	public static void main(String[] args) {
+		int ay = 1;
+		switch(ay) {
+		case 1:
+System.out.println("ocak");
+			break;
+		case 2:
+			System.out.println("þubat");
+			break; //break eklemezsen alt satýrýda ekrana yazar
+		case 3:
+			System.out.println("mart");
+			break;
+		case 4:
+			System.out.println("nisan");
+			break;
+		case 5:
+			System.out.println("mayýs");
+			break;
+		case 6:
+			System.out.println("haziran");
+			break;
+		case 7:
+			System.out.println("temmuz");
+			break;
+		case 8:
+			System.out.println("aðustos");
+			break;
+		case 9:
+			System.out.println("eylül");
+			break;
+		case 10:
+			System.out.println("ekim");
+			break;
+		case 11:
+			System.out.println("kasým");
+			break;
+		case 12:
+			System.out.println("aralýk");
+			break;
+default:
+	System.out.println("hatalý giriþ");
+	break;
+		}
+
+	}
+
+}
+//---------------------------------------------------------------------------
+
+
+
+
+import java.util.Scanner;
+
+public class örnek10a {
+
+	public static void main(String[] args) {
+
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("lütfen iþlem secin + - * / ");
+		String islem = sc.next();
+
+		int sayi1 = sc.nextInt();
+		int sayi2 = sc.nextInt();
+		int sonuc =0;
+		boolean hata = false;
+		switch(islem) {
+		case "+":
+			sonuc= sayi1+sayi2;
+			break;
+		case "-":
+			sonuc= sayi1-sayi2;
+			break;
+		case "*":
+			sonuc= sayi1*sayi2;
+			break;
+		case "/":
+			sonuc= sayi1/sayi2;
+			break;
+		default: 
+			hata = true;
+			System.out.println("hatalý iþlem secimi yaptýnýz");
+			break;
+		}
+		if(hata==false) {
+			System.out.println(sonuc);
+		}	}
+
+
+}
+//---------------------------------------------------------------------
